@@ -10,7 +10,7 @@ state.value.height = 40
   <div id="info-container">
     <p>hai im caroline (car online) and here is some info abt me</p>
     <p>- 15 year old</p>
-    <p>-  odin, go, rust and vue :3</p>
+    <p>- odin, go, rust and vue :3</p>
     <p>- im a BIG FAN of stomachbook</p>
     <p>- fav games: oneshot, celeste, counter strike, geometry dash</p>
   </div>
