@@ -4,12 +4,10 @@ import { Page, type Container } from '../page'
 
 const state = defineModel<Container>({ required: true })
 state.value.height = 50
-state.value.width = 50
 
 const infoFolder = folder('about me', () => state.value.currentPage = Page.Info)
 const projectsFolder = folder('projects', () => state.value.currentPage = Page.Projects)
 const blogFolder = folder('blog', () => state.value.currentPage = Page.Blog)
-
 </script>
 
 <template>

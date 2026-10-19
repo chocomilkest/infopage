@@ -8,6 +8,7 @@ import PageTitlebar from './components/PageTitlebar.vue'
 import { ref } from 'vue'
 import { type Container, Page } from './page'
 import PageBlog from './components/PageBlog.vue'
+import { useSizing } from './sizing'
 
 const state = ref<Container>({
   currentPage: Page.Explorer,
@@ -15,6 +16,8 @@ const state = ref<Container>({
   height: 50,  // in dvh
   blogs: null
 })
+
+useSizing(state)
 </script>
 
 <template>

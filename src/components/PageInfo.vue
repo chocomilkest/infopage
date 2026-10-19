@@ -2,7 +2,6 @@
 import { type Container } from '../page'
 
 const state = defineModel<Container>({ required: true })
-state.value.width  = 35
 state.value.height = 40
 </script>
 

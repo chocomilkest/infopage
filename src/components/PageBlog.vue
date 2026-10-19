@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import { watch } from 'vue'
 
 import ExplorerFile from './ExplorerFile.vue'
 import { type Container } from '../page'
@@ -9,19 +8,9 @@ import { marked } from 'marked'
 import DOMPurify from 'dompurify'
 
 const state = defineModel<Container>({ required: true })
-state.value.width  = 45
 state.value.height = 70
 
 const loadError = ref('')
-
-watch(
-  () => state.value.blogs?.current,
-  (current) => {
-    const newWidth = current !== null ? 50 : 45
-    state.value.width = newWidth
-  },
-  { immediate: true }
-)
 
 /* bwaaaa async in vue SUCKS */
 onMounted(async () => {
