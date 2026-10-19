@@ -59,11 +59,12 @@ function onCloseClick() {
 
 #titlebar-container {
   /* layout */
-  min-width:  v-bind('state.width + "dvh"');
+  width: v-bind('state.width + "dvw"');
+  max-width: calc(100dvw - 32px);
   min-height: 32pt;
   margin-bottom: 8pt;
 
-	transition: min-width 0.6s cubic-bezier(0.16, 1, 0.3, 1), min-height 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+	transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), min-height 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 
   /* appearance */
   background-color: #0f0f0f;

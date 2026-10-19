@@ -44,11 +44,12 @@ const state = ref<Container>({
 <style scoped>
 #root-container {
   /* layout */
-  min-width:  v-bind('state.width + "dvw"');
+  width: v-bind('state.width + "dvw"');
+  max-width: calc(100dvw - 32px);
   min-height: v-bind('state.height + "dvh"');
 
   /* easeOutExpo */
-	transition: min-width 0.6s cubic-bezier(0.16, 1, 0.3, 1), min-height 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+	transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), min-height 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 
   /* easeOutCirc */
   /*transition: min-width 300ms cubic-bezier(0, 0.55, 0.45, 1), min-height 300ms cubic-bezier(0, 0.55, 0.45, 1);*/
