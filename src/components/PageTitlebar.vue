@@ -68,7 +68,8 @@ function onCloseClick() {
 
   /* appearance */
   background-color: #0f0f0f;
-  border-radius:      8px;
+  border-radius:      8px 8px 0px 0px;
+  border-bottom:      2px solid #222;
 
   display: flex;
   flex-direction: row;
