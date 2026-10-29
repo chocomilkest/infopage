@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "dompurify": "^3.4.17",
-    "marked": "^18.1.1",
+    "marked": "^18.1.2",
     "vue": "^3.5.44"
   },
   "devDependencies": {
@@ -30,14 +30,14 @@
     "eslint-plugin-oxlint": "~1.82.0",
     "eslint-plugin-vue": "~10.11.1",
     "jiti": "^2.7.0",
-    "npm-run-all2": "^9.0.3",
+    "npm-run-all2": "^9.0.4",
     "oxlint": "~1.82.0",
     "prettier": "3.9.6",
     "typescript": "~6.0.3",
-    "vite": "^8.3.4",
+    "vite": "^8.3.5",
     "vite-plugin-vue-devtools": "^8.2.1",
     "vue-eslint-parser": "^10.4.1",
-    "vue-tsc": "^3.3.13"
+    "vue-tsc": "^3.3.14"
   },
   "engines": {
     "node": "^22.18.0 || >=24.12.0"
